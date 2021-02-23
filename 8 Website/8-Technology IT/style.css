@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    
+}
+
+.wrapper{
+    display: grid;
+    gap: 3rem;
+    grid-template-rows:.3fr .5fr 1fr;
+
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+/* ------HEADER------- */
+
+.container header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:2rem ;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.left-header i{
+    font-size: 4rem;
+    margin-right: 1rem;
+}
+
+.left-header .title{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-header .title h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.left-header .title p{
+    font-size: 1.5rem;
+    color: #007FF4;
+    font-weight: 500;
+}
+
+.right-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.right-header h2{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: right;
+}
+
+nav{
+    width: 100%;
+}
+
+.right-header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.right-header nav ul li{
+    list-style: none;
+}
+
+.right-header nav ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.right-header nav .selected{
+    color: #007FF4; 
+}
+
+/* ------BANNER------- */
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    height:100%;
+}
+
+/* ------MAIN------- */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    justify-items: center;
+    height: 100%;
+}
+
+main .card{
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    
+}
+
+main .card img{
+    max-width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+main .card h2{
+    font-size: 48px;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.btn button{
+    color: #FFF;
+    background-color: #007FF4;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+}
+
+
+/* ------MEDIA QUERIES------ */
+
+@media screen and (max-width:1200px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .left-header{
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    header .right-header{
+        align-items: center;
+    }
+
+    header .right-header nav ul{
+        justify-content: center;
+    }
+
+}

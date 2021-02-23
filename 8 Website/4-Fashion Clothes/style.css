@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,400;1,500&display=swap');
+
+:root{
+    --primary-color: #764400;
+    --seconder-color: #A66000;
+    --bg-color: #FFE8C8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--primary-color);
+    font-style: italic;
+    height: 100%;
+    
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--bg-color);
+    
+}
+
+.sub-container{
+    width:60%;
+    
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo i{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.hero-items h1{
+    color: var(--seconder-color);
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.hero-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-items a{
+    font-size: 2rem;
+    font-weight:400 ;
+    color: #FFFFFF;
+    background:var(--seconder-color);
+    padding: 1rem 5rem;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    margin-top: 2rem;
+}
+
+.content img{
+    object-fit: cover;
+    width: 22rem;
+    height: 28rem;
+}
+
+.banner{
+    grid-row: 1/2;
+    margin-bottom: 4rem;
+}
+
+.banner h2{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.banner p{
+    font-size: 1.6rem;
+    font-weight: 200;
+
+}
+
+.photo1{
+    grid-row: 1/span 2;
+    justify-self: end;
+}
+.photo1 img{
+    box-shadow: 15px 15px var(--seconder-color);
+}
+
+.photo2{
+    grid-row: 2/-1;
+}
+
+.photo2 img{
+    box-shadow: -15px -15px var(--seconder-color);
+}
+
+.btn{
+    grid-row: 3/4;
+    justify-self: end;
+    align-self: center;
+}
+
+.btn a{
+    font-size: 3rem;
+    color: #FFFFFF; 
+    background-color:var(--seconder-color);
+    padding: 1rem 5rem;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+
+
+
